@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rent a Chair – Stellar Beauty Salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Apply to rent a chair at Stellar Beauty Salon in Fresno, CA. Private stations for hairstylists, nail techs, and makeup artists." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">★</span>
+        <div class="logo-text">
+          <span class="logo-name">Stellar Beauty Salon</span>
+          <span class="logo-tagline">Stellar Beauty For a Stellar You</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="rent-a-chair.html" class="nav-cta">Rent a Chair</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container rent-grid">
+        <div>
+          <h1>Rent a Chair at Stellar Beauty Salon</h1>
+          <p>
+            We offer private stations for committed professionals who want a clean, modern, and friendly space to grow their own brand.
+          </p>
+          <ul class="rent-list">
+            <li>Private styling station in a modern, elegant salon</li>
+            <li>Great location at 377 W Shaw Ave, Fresno, CA 93706</li>
+            <li>Ideal for hairstylists, nail techs, makeup artists, and brow/beauty specialists</li>
+            <li>Bring your own clients and build your own business</li>
+          </ul>
+          <p>
+            If you’re interested, fill out the form or contact us directly:
+          </p>
+          <p class="contact-highlight">
+            Call/Text: <a href="tel:+15597701552">(559) 770-1552</a><br />
+            Email: <a href="mailto:stellarsalonfresno@gmail.com">stellarsalonfresno@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Rental Inquiry Form</h2>
+          <!-- Note: mailto will open the user's email app with the form content -->
+          <form
+            class="rent-form"
+            action="mailto:stellarsalonfresno@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-group">
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="Full Name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone*</label>
+              <input type="tel" id="phone" name="Phone" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="Email" required />
+            </div>
+            <div class="form-group">
+              <label for="role">Main Service You Offer*</label>
+              <select id="role" name="Main Service" required>
+                <option value="">Select one</option>
+                <option>Hairstylist</option>
+                <option>Nail Tech</option>
+                <option>Makeup Artist</option>
+                <option>Waxing / Threading</option>
+                <option>Esthetician / Facials</option>
+                <option>Other Beauty Service</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="instagram">Instagram Handle</label>
+              <input type="text" id="instagram" name="Instagram" placeholder="@yourhandle" />
+            </div>
+            <div class="form-group">
+              <label for="experience">Years of Experience</label>
+              <input type="text" id="experience" name="Years of Experience" />
+            </div>
+            <div class="form-group">
+              <label for="start">Preferred Start Date</label>
+              <input type="text" id="start" name="Preferred Start Date" placeholder="Example: January 2026" />
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about yourself & your clientele</label>
+              <textarea id="message" name="Message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn primary full-width">
+              Submit Inquiry
+            </button>
+            <p class="form-note">
+              After you submit, your email app may open with this information.
+              Review and send to complete your inquiry.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Stellar Beauty Salon</strong><br />
+        377 W Shaw Ave, Fresno, CA 93706
+      </div>
+      <div>
+        <a href="tel:+15597701552">(559) 770-1552</a><br />
+        <a href="mailto:stellarsalonfresno@gmail.com">stellarsalonfresno@gmail.com</a>
+      </div>
+      <div class="footer-tagline">
+        ★ Stellar Beauty For a Stellar You ★
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+      });
+    }
+  </script>
+</body>
+</html>
